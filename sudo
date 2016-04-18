@@ -1,0 +1,6 @@
+menu
+cycles through interface
+every button press changes the screen
+run an array for each button press
+[0,1,2,3]
+clock, temp, lights, pir
