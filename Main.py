@@ -1,4 +1,4 @@
-from Board import board
+from BOARD import board
 from LCD import LCD1602
 from Button import button
 from LED import led
