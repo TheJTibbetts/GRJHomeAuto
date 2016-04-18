@@ -1,7 +1,7 @@
 # GRJHomeAuto
 GRJ Home automation repository
-/rThis home automation program uses a varity of different sensors including:
-/n. PIR
+This home automation program uses a varity of different sensors including:
+/br. PIR
 . Buzzer
 . LED
 . LCD sceen
