@@ -126,8 +126,6 @@ try:
 #end
 
 except KeyboardInterrupt:
-  lcd.lcd_string("Goodbye!", lcd.LCD_LINE_1)
-  time.sleep(3)
   lcd.cleanup()
   gpio.cleanup()
   status
