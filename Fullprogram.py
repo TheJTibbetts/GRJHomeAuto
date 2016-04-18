@@ -47,7 +47,7 @@ class TempSense(Board):
       temp_c = int(temp_string) / 1000.0
       #temp_f = temp_c * 9 / 5 + 32
       return temp_c
-###      
+###
   while True:
     temp = int(read_temp())
     read_string = str(temp)
@@ -66,29 +66,80 @@ class TempSense(Board):
     time.sleep(0.1)
 ###
 
-class TempIncrease:
-  
 class PIR:
   
-class Buzzer:
+  GPIO = RPi.GPIO
+  
+  PIR_PIN = 12
+  GPIO.setup(PIR_PIN, GPIO.IN)
+  GPIO.setup(5, GPIO.OUT)
+
+  def MOTION(PIR_PIN):
+
+    while True:
+      print 'debug:'+str(GPIO.input(PIR_PIN))
+      if GPIO.input(PIR_PIN) == True:
+        print 'debug: MOTION DETECTED'
+        GPIO.output(5,1)
+        time.sleep(1)
+        GPIO.output(5,0)
+        time.sleep(1)
+      elif GPIO.input(PIR_PIN) == False:
+        print 'debug: no motion detected'
+
+  print 'PIR Module Test (CTRL+C to exit)'
+  time.sleep(2)
+  print 'Ready'
+
+  #test buzzer
+  #print('DEBUG: Buzzer on')
+  #GPIO.output(5, GPIO.HIGH)
+  #time.sleep(5)
+  #print('DEBUG: Buzzer off')
+  #GPIO.output(5, GPIO.LOW)
+
+  try:
+               GPIO.add_event_detect(PIR_PIN, GPIO.RISING, callback=MOTION)
+               while 1:
+                              time.sleep(50)
+  except KeyboardInterrupt:
+               print 'Quit'
+               GPIO.cleanup()
+  Status
   
 class ProtentiousSensor:
   
+  
 class ButtonLED:
+  
+  
+class Clock:
+  base_dir = '/sys/bus/w1/devices/'
+  device_folder = glob.glob(base_dir + '28*')[0]
+  device_file = device_folder + '/w1_slave'
+  while True:
+    lcd.lcd_string("-CLOCK-", lcd.LCD_LINE_1)
+    lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
+    time.sleep(0.1)
   
 class Menu:
   lcd.lcd_string("Welcome to GRJ", lcd.LCD_LINE_1)
   lcd.lcd_string("HomeAuto System", lcd.LCD_LINE_1)
-  
+
+#Start of main code
 
 gpio = RPi.GPIO
 
-
-
 try:
-  
+#PIR activate code (I Think)
+  GPIO.add_event_detect(PIR_PIN, GPIO.RISING, callback=MOTION)
+  while 1:
+  time.sleep(50)
+#end
+
 except KeyboardInterrupt:
   lcd.lcd_string("Goodbye!", lcd.LCD_LINE_1)
   time.sleep(3)
   lcd.cleanup()
   gpio.cleanup()
+  status
