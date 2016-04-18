@@ -1,5 +1,5 @@
 from Board import board
-from LCD import lcd1602
+from LCD import LCD1602
 from Button import button
 from LED import led
 from Temp import temp
