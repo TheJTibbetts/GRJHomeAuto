@@ -1,0 +1,14 @@
+import RPi.GPIO as GPIO
+import time
+
+class led:
+  GPIO.setmode(GPIO.BCM)
+  GPIO.setup(6, GPIO.OUT)
+
+  while True:
+    GPIO.output(6, True)
+    time.sleep(1)
+    GPIO.output(6,False)
+    time.sleep(1)
+  GPIO.cleanup()
+
