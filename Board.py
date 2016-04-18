@@ -1,7 +1,7 @@
 import RPi.GPIO
 from time import sleep
 
-class Board:
+class board:
 
     def __init__(self):
         ''' Enables GPIO on Raspberry Pi.
