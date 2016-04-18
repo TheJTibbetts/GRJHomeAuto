@@ -7,4 +7,9 @@ This home automation program uses a varity of different sensors including:
 <br />. LCD sceen
 <br />. buttons
 <br />. potentiometer
-<br />. temputure sensor
+<br />. temperature sensor
+<br />
+<br />
+<br /> TO DO:
+<br /> OOP Motion.py
+<br /> OOP Temp.py
