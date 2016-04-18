@@ -112,7 +112,7 @@ class Clock:
   
 class Menu:
   lcd.lcd_string("Welcome to GRJ", lcd.LCD_LINE_1)
-  lcd.lcd_string("HomeAuto System", lcd.LCD_LINE_1)
+  lcd.lcd_string("HomeAuto System", lcd.LCD_LINE_2)
 
 #Start of main code
 
