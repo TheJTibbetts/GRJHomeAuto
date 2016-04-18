@@ -1,5 +1,6 @@
 import Board as board
 import LCD as lcd
 import Button as button
-import LED as led
+from LED import led
 import Temp as temp
+import Motion as motion
