@@ -98,10 +98,7 @@ class PIR:
   #print('DEBUG: Buzzer off')
   #GPIO.output(5, GPIO.LOW)
   
-class ProtentiousSensor:
-  
-  
-class ButtonLED:
+class PretentiousLED:
   
   
 class Clock:
