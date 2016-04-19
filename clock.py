@@ -4,6 +4,8 @@ import glob
 import time
 from lcd1602 import LCD1602
 
+class: CLOCK_CL
+
 GPIO.setmode(GPIO.BCM)
 
 lcd=LCD1602()
