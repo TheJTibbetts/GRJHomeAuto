@@ -1,4 +1,4 @@
-class LCD1602:
+class LCD1602_CL:
 
     def __init__(self):
 
