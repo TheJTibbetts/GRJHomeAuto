@@ -4,4 +4,4 @@ from Button import button
 from LED import led
 from Temp import temp
 from Motion import motion
-from Buzzer import buzzer
+from BUZZER import buzzer
