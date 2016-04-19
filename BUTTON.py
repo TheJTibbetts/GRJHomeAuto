@@ -1,6 +1,6 @@
 from time import sleep
 
-class Button:
+class BUTTON_CL:
     def __init__(self, gpio_object, pin):
         self.__board = gpio_object
         self.__pin = pin
