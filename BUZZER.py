@@ -1,6 +1,6 @@
 from Board import board
 
-class buzzer:
+class BUZZER_CL:
   def __init__(self, board, pin):
     self.board = board
     self.pin = pin
