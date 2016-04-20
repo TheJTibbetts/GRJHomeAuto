@@ -7,12 +7,6 @@ class RGBLED_CL:
     self.turnon = ledOn
     self.turnoff = ledOff
     self.board = BOARD_CL
-    self.RLEDon()
-    self.GLEDon()
-    self.BLEDon()
-    self.RLEDoff()
-    self.GLEDoff()
-    self.BLEDoff()
   
   def RLEDon(self):
     self.turnon
@@ -31,3 +25,21 @@ class RGBLED_CL:
   
   def BLEDoff(self):
     self.turnoff
+
+if __name__ == "__main__":
+    from BOARD import BOARD_CL
+    from time import sleep
+    rpi = Board()
+    rled = Led(rpi, 16)
+    gled = Led(rpi, 20)
+    bled = Led(rpi, 21)
+    rled.RLEDon()
+    sleep(3)
+    rled.RLEDoff()
+    gled.GLEDon()
+    sleep(3)
+    gled.GLEDoff()
+    bled.BLEDon()
+    sleep(3)
+    bled.BLEDoff()
+    
