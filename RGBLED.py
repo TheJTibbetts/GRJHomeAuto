@@ -7,6 +7,12 @@ class RGBLED_CL:
     self.turnon = ledOn
     self.turnoff = ledOff
     self.board = BOARD_CL
+    self.RLEDon()
+    self.GLEDon()
+    self.BLEDon()
+    self.RLEDoff()
+    self.GLEDoff()
+    self.BLEDoff()
   
   def RLEDon(self):
     self.turnon
