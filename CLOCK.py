@@ -16,12 +16,14 @@ class: CLOCK_CL
     device_folder = glob.glob(base_dir + '28*')[0]
     device_file = device_folder + '/w1_slave'
 
-    try:
-            while True:
-                    lcd.lcd_string("-CLOCK-", lcd.LCD_LINE_1)
-                    lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
-                    time.sleep(0.1)
+## start of activator code ##
 
-    except KeyboardInterrupt:
-        lcd.cleanup()
-        GPIO.cleanup()
+#   try:
+#        while True:
+#            lcd.lcd_string("-CLOCK-", lcd.LCD_LINE_1)
+#            lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
+#            time.sleep(0.1)
+#
+#    except KeyboardInterrupt:
+#        lcd.cleanup()
+#        GPIO.cleanup()
