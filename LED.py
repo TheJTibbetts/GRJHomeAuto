@@ -1,4 +1,4 @@
-from Board import board
+from BOARD import BOARD_CL
 
 class LED_CL:
   def __init__(self, board, pin):
