@@ -29,7 +29,7 @@ class RGBLED_CL:
 if __name__ == "__main__":
     from BOARD import BOARD_CL
     from time import sleep
-    rpi = BOARD()
+    rpi = BOARD_CL()
     rled = Led(rpi, 16)
     gled = Led(rpi, 20)
     bled = Led(rpi, 21)
