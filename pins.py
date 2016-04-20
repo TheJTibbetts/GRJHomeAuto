@@ -1,9 +1,9 @@
 from BOARD import BOARD_CL
 
 LED = 6
-RGB_r = 16
-RGB_b = 20
-RGB_g = 21
+Rled = 16
+Bled = 20
+Gled = 21
 PIR = 32
 Temp = 4
 Buzzer = 6
