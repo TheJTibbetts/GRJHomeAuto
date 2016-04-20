@@ -11,8 +11,10 @@ class TEMP_CL:
     def __init__(self, BOARD_CL, pin):
         self.board = BOARD_CL
         self.pin = pin
-        self.setup_thermometer()
-        
+#        self.setup_thermometer()
+        self.read_temp_raw()
+        self.read_temp()
+    
     def read_temp_raw(self):
         f = open(device_file, 'r')
         lines = f.readlines()
