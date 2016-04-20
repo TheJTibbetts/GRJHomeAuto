@@ -1,6 +1,5 @@
 ## NOT IN USE ##
 
-
 import RPi.GPIO
 import time
 import os
