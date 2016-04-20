@@ -1,8 +1,8 @@
 from time import sleep
 
 class BUTTON_CL:
-    def __init__(self, gpio_object, pin):
-        self.__board = gpio_object
+    def __init__(self, BOARD_CL, pin):
+        self.__board = BOARD_CL
         self.__pin = pin
         self.__setup_button()
         self.__pressed = False
@@ -29,16 +29,3 @@ class BUTTON_CL:
         
     def __my_callback(self, channel):
         self.pressed = True
-
-
-
-if __name__ == "__main__":
-    from board import Board
-    rpi = Board()
-    button = Button(rpi, 22)
-    
-    while True: 
-        if button.pressed:
-            print('button pressed')
-            button.pressed = False    
-    rpi.GPIO.cleanup()
