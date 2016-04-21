@@ -7,5 +7,3 @@ from BUZZER import BUZZER_CL
 from TEMP import TEMP_CL
 from MOTION import MOTION_CL
 from PIN import PIN_CL
-
-def 
