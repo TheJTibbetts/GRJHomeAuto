@@ -9,7 +9,7 @@ class BOARD_CL:
         self.rpi_version = self.GPIO.VERSION
         self.mode = self.GPIO.getmode()
 
-    def setupGpio():
+    def setupGpio(self):
         self.GPIO.setmode(self.GPIO.BCM)
         self.GPIO.setwarnings(False)
 
