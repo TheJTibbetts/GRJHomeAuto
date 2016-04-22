@@ -1,5 +1,11 @@
 from BOARD import BOARD_CL
 
+class PINS_CL:
+  def __init__(self, BOARD_CL, pin):
+    self.board = BOARD_CL
+    self.pin = pin
+    self.setup_led()
+
 LED = 6
 Rled = 16
 Bled = 20
