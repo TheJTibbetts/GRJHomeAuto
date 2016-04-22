@@ -6,6 +6,7 @@ class RGBLED_CL:
   def __init__(self, BOARD_CL, pin, LED_CL):
     self.turnon = ledOn
     self.turnoff = ledOff
+    self.pin = pin
     self.board = BOARD_CL
   
   def RLEDon(self):
