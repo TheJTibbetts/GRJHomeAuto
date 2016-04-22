@@ -3,10 +3,10 @@ from BOARD import BOARD_CL
 
 class RGBLED_CL:
   
-  def __init__(self, BOARD_CL, pin, LED_CL):
+  def __init__(self, BOARD_CL, LED_CL):
     self.turnon = LED_CL.ledOn
     self.turnoff = LED_CL.ledOff
-    self.pin = pin
+#    self.pin = pin
     self.board = BOARD_CL
   
   def RLEDon(self):
@@ -31,9 +31,9 @@ if __name__ == "__main__":
     from BOARD import BOARD_CL
     from time import sleep
     rpi = BOARD_CL()
-    rled = RGBLED_CL(LED_CL(rpi, 16))
-    gled = RGBLED_CL(LED_CL(rpi, 20))
-    bled = RGBLED_CL(LED_CL(rpi, 21))
+    rled = RGBLED_CL.LED_CL(rpi, 16)
+    gled = RGBLED_CL.LED_CL(rpi, 20)
+    bled = RGBLED_CL.LED_CL(rpi, 21)
     rled.RLEDon()
     sleep(3)
     rled.RLEDoff()
