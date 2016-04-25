@@ -38,3 +38,19 @@ if __name__ == "__main__":
     from time import sleep
     rpi = BOARD_CL()
     
+    try:
+    while True:
+            temp = int(read_temp())
+            read_string = str(temp)
+            print(read_temp())
+            lcd.lcd_string("-TEMPERATURE-", lcd.LCD_LINE_1)
+            lcd.lcd_string(read_string + " C", lcd.LCD_LINE_2)
+            if int(temp) >= 24:
+                GPIO.output(20, 0)
+                GPIO.output(16, 1)
+                #GPIO.output(24, 0)
+            elif int(temp) < 23.9:
+                GPIO.output(20, 1)
+               # GPIO.output(23, 0)
+                GPIO.output(16, 0)
+            time.sleep(0.1)
