@@ -1,13 +1,13 @@
-from LED import LED_CL
-from BOARD import BOARD_CL
+from LED import LED_CL as led
+from BOARD import BOARD_CL as board
 
 class RGBLED_CL:
   
-  def __init__(self, BOARD_CL, LED_CL):
-    self.turnon = LED_CL.ledOn
-    self.turnoff = LED_CL.ledOff
+  def __init__(self, board, led):
+    self.turnon = led.ledOn
+    self.turnoff = led.ledOff
 #    self.pin = pin
-    self.board = BOARD_CL
+    self.board = board
   
   def RLEDon(self):
     self.turnon
@@ -29,6 +29,7 @@ class RGBLED_CL:
 
 if __name__ == "__main__":
     from BOARD import BOARD_CL
+    from LED import LED_CL
     from time import sleep
     rpi = BOARD_CL()
     rled = RGBLED_CL(rpi, 16)
