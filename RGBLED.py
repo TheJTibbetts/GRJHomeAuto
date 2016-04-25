@@ -32,7 +32,6 @@ if __name__ == "__main__":
     from LED import LED_CL
     from time import sleep
     rpi = BOARD_CL()
-    rgbled = RGBLED_CL()
     rled = rgbled(rpi, 16)
     gled = rgbled(rpi, 20)
     bled = rgbled(rpi, 21)
