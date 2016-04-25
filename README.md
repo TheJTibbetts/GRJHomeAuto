@@ -13,3 +13,5 @@ This home automation program uses a varity of different sensors including:
 <br /> TO DO:
 <br /> OOP Motion.py
 <br /> OOP Temp.py
+<br />
+<br />
