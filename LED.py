@@ -14,3 +14,12 @@ class LED_CL:
   
   def ledOff(self):
     self.board.GPIO.output(self.pin, self.board.GPIO.LOW)
+
+if __name__ == "__main__":
+    from BOARD import BOARD_CL
+    from time import sleep
+    rpi = BOARD_CL()
+    led = LED_CL(rpi, 17)
+    led.ledOn()
+    sleep(3)
+    led.ledOff()
