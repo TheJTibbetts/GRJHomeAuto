@@ -4,7 +4,7 @@ from BOARD import BOARD_CL as board
 class RGBLED_CL:
   
   def __init__(self, board, led):
-    self.turnon = led.ledOn
+    self.turnon = ledOn
     self.turnoff = led.ledOff
 #    self.pin = pin
     self.board = board
