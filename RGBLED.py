@@ -45,7 +45,7 @@ if __name__ == "__main__":
     rled = LED_CL(rpi, 16)
     gled = LED_CL(rpi, 20)
     bled = LED_CL(rpi, 21)
-    rled.RLEDon()
+    rled.ledOn()
     sleep(3)
     rled.ledOn()
     gled.GLEDon()
