@@ -39,7 +39,7 @@ if __name__ == "__main__":
     rpi = BOARD_CL()
     
     try:
-    while True:
+        while True:
             temp = int(read_temp())
             read_string = str(temp)
             print(read_temp())
