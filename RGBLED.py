@@ -43,8 +43,8 @@ if __name__ == "__main__":
     from time import sleep
     rpi = BOARD_CL()
     rled = LED_CL(rpi, 16)
-    gled = RGBLED_CL(rpi, 20)
-    bled = RGBLED_CL(rpi, 21)
+    gled = LED_CL(rpi, 20)
+    bled = LED_CL(rpi, 21)
     rled.RLEDon()
     sleep(3)
     rled.RLEDoff()
