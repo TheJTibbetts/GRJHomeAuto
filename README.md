@@ -1,4 +1,4 @@
-# GRJHomeAuto Nothing Like a Good Nut
+# GRJHomeAuto, Nothing Like a Good Nut
 GRJ Home automation repository
 This home automation program uses a varity of different sensors including:
 <br />. PIR
