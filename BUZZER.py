@@ -14,3 +14,13 @@ class BUZZER_CL:
     
   def buzzerOff(self):
     self.board.GPIO.output(self.pin, self.board.GPIO.LOW)
+    
+  
+if __name__ == "__main__":
+    from BOARD import BOARD_CL
+    from time import sleep
+    rpi = BOARD_CL()
+    buzz = BUZZER_CL(rpi, 5)
+    buzz.buzzerOn()
+    sleep(3)
+    buzz.buzzerOff()
