@@ -8,11 +8,3 @@ class Motion_CL:
     self.pin = pin
     self.setup_PIR
 
-if __name__ == "__main__":
-    from BOARD import BOARD_CL
-    from time import sleep
-    rpi = BOARD_CL()
-    mot = Motion_CL(rpi, 17)
-    mot.buzzerOn()
-    sleep(1)
-    mot.buzzerOff()
