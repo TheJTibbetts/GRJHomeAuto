@@ -10,32 +10,32 @@ class RGBLED_CL:
     self.pin = pin
     self.board = board
   
-  def RLEDsetup(self):
-    self.setup
+#  def RLEDsetup(self):
+ #   self.setup
     
-  def GLEDsetup(self):
-    self.setup
+#  def GLEDsetup(self):
+ #   self.setup
     
-  def BLEDsetup(self):
-    self.setup
+  #def BLEDsetup(self):
+   # self.setup
   
-  def RLEDon(self):
-    self.turnOn
+  #def RLEDon(self):
+    #self.turnOn
   
-  def GLEDon(self):
-    self.turnOn
+  #def GLEDon(self):
+    #self.turnOn
   
-  def BLEDon(self):
-    self.turnOn
+  #def BLEDon(self):
+    #self.turnOn
 
-  def RLEDoff(self):
-    self.turnOff
+  #def RLEDoff(self):
+    #self.turnOff
   
-  def GLEDoff(self):
-    self.turnOff
+  #def GLEDoff(self):
+    #self.turnOff
   
-  def BLEDoff(self):
-    self.turnOff
+  #def BLEDoff(self):
+  #  self.turnOff
 
 if __name__ == "__main__":
     from BOARD import BOARD_CL
@@ -48,10 +48,10 @@ if __name__ == "__main__":
     rled.ledOn()
     sleep(3)
     rled.ledOn()
-    gled.GLEDon()
+    gled.ledOn()
     sleep(3)
-    gled.GLEDoff()
-    bled.BLEDon()
+    gled.ledOff()
+    bled.ledOn()
     sleep(3)
-    bled.BLEDoff()
+    bled.ledOff()
     
