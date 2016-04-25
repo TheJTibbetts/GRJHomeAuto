@@ -37,15 +37,4 @@ if __name__ == "__main__":
     from BOARD import BOARD_CL
     from time import sleep
     rpi = BOARD_CL()
-    rled = RGBLED_CL(rpi, 16)
-    gled = RGBLED_CL(rpi, 20)
-    bled = RGBLED_CL(rpi, 21)
-    rled.RLEDon()
-    sleep(3)
-    rled.RLEDoff()
-    gled.GLEDon()
-    sleep(3)
-    gled.GLEDoff()
-    bled.BLEDon()
-    sleep(3)
-    bled.BLEDoff()
+    
