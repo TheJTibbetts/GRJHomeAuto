@@ -4,6 +4,7 @@ This home automation program uses a varity of different sensors including:
 <br />. PIR
 <br />. Buzzer
 <br />. LED
+<br />. RGB_LED
 <br />. LCD sceen
 <br />. buttons
 <br />. potentiometer
@@ -27,4 +28,4 @@ This home automation program uses a varity of different sensors including:
 <br />
 <br />
 <br />
-<br />Rob Go suck a nut.
+<br /> Jakes a nut.
