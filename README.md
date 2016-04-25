@@ -28,4 +28,4 @@ This home automation program uses a varity of different sensors including:
 <br />
 <br />
 <br />
-<br /> Jakes a nut.
+<br />
