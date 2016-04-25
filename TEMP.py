@@ -54,3 +54,5 @@ if __name__ == "__main__":
                # GPIO.output(23, 0)
                 GPIO.output(16, 0)
             time.sleep(0.1)
+
+except KeyboardInterrupt()
