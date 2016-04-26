@@ -1,4 +1,4 @@
-# GRJHomeAuto, Nothing Like a Good Nut
+# GRJHomeAuto
 GRJ Home automation repository
 This home automation program uses a varity of different sensors including:
 <br />. PIR
@@ -14,18 +14,3 @@ This home automation program uses a varity of different sensors including:
 <br /> TO DO:
 <br /> OOP Motion.py
 <br /> OOP Temp.py
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
