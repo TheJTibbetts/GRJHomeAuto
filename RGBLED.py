@@ -54,4 +54,3 @@ if __name__ == "__main__":
     bled.ledOn()
     sleep(3)
     bled.ledOff()
-    
