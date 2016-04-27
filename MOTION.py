@@ -1,10 +1,31 @@
 from BOARD import BOARD_CL
-from BUZZER import BUZZER_CL
 
-class Motion_CL:
-  def __init__(self, BOARD_CL, BUZZER_CL):
-    self.board = BOARD_CL
-    self.buzzer = BUZZER_CL
-    self.pin = pin
-    self.setup_PIR
+class MOTION_CL:
+    def __init__(self, BOARD_CL, pin):
+        self.__board = BOARD_CL
+        self.__pin = pin
+        self.__setup_pir()
+        self.__triggered = False
 
+    @property
+    def triggered(self):
+        return self.__pressed
+
+    @triggered.setter
+    def triggered(self, value):
+        self.__pressed = value
+
+
+    def __setup_pir(self, resistor=False):
+        if not resistor:
+            self.__board.GPIO.setup(self.__pin, self.__board.GPIO.IN)
+        elif resistor:
+            self.__board.GPIO.set(self.__pin, self.__board.GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+        else:
+            print('Pir error')
+        
+        # add interrupt
+        self.__board.GPIO.add_event_detect(self.__pin, self.__board.GPIO.FALLING, callback=self.__my_callback, bouncetime=300)
+        
+    def __my_callback(self, channel):
+        self.pressed = True
