@@ -41,7 +41,7 @@ try:
             read_string = str(temp)
             print(read_temp())
             lcd.lcd_string("-TEMPERATURE-", lcd.LCD_LINE_1)
-            lcd.lcd_string(read_string + " C", lcd.LCD_LINE_2)
+            lcd.lcd_string(read_string + "°C", lcd.LCD_LINE_2)
             if int(temp) >= 24:
                 GPIO.output(20, 0)
                 GPIO.output(16, 1)
