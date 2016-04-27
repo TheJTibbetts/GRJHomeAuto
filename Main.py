@@ -6,7 +6,6 @@ from CLOCK import CLOCK_CL
 from BUZZER import BUZZER_CL
 from TEMP import TEMP_CL
 from MOTION import MOTION_CL
-from PIN import PIN_CL
 
 def clock():
   try:
