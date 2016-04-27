@@ -6,6 +6,8 @@ from BUZZER import BUZZER_CL
 from TEMP import TEMP_CL
 from MOTION import MOTION_CL
 
+ButtonPresses = [1,2,3,4]
+
 def clock():
   try:
     while True:
