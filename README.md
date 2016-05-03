@@ -14,3 +14,6 @@ GRJ Home automation repository
 <br /> TO DO:
 <br /> OOP Motion.py
 <br /> OOP Temp.py
+<br />
+<br /> If we have time:
+<br />. Camera
