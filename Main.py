@@ -14,7 +14,6 @@ def clock():
       lcd.lcd_string("-CLOCK-", lcd.LCD_LINE_1)
       lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
       time.sleep(0.1)
-    
 #def temp():
 #  try:
 #    while True:
@@ -32,7 +31,6 @@ def clock():
 #        # GPIO.output(23, 0)
 #        GPIO.output(16, 0)
 #      time.sleep(0.1)
-
 #def pirsensor():
 #  try:
 #    while True:
