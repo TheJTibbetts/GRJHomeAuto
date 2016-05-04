@@ -34,7 +34,7 @@ from MOTION import MOTION_CL
 def pirsensor():
   try:
     while True:
-      print 'debug:'+str(GPIO.input(PIR_PIN))
+      print 'debug:' +str (GPIO.input(PIR_PIN))
       if GPIO.input(PIR_PIN) == True:
         print 'debug: MOTION DETECTED'
         lcd.lcd_string("MOTION DETECTED", lcd.LCD_LINE_2)
