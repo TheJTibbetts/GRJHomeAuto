@@ -44,3 +44,6 @@ def clock():
 #        time.sleep(1)
 ##Why?      elif GPIO.input(PIR_PIN) == False:
 ##Why?        print 'debug: no motion detected
+except KeyboardInterrupt:
+    lcd.cleanup()
+    GPIO.cleanup()
