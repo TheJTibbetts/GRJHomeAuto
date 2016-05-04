@@ -5,10 +5,6 @@ from LED import LED_CL
 from BUZZER import BUZZER_CL
 from TEMP import TEMP_CL
 from MOTION import MOTION_CL
-import os
-import glob
-
-os.system('modprobe w1-gpio')
 
 
 lcd=LCD1602_CL()
