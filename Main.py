@@ -8,12 +8,12 @@ from MOTION import MOTION_CL
 
 #ButtonPresses = [1,2,3,4]
 
-#def clock():
-#  try:
-#    while True:
-#      lcd.lcd_string("-CLOCK-", lcd.LCD_LINE_1)
-#      lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
-#      time.sleep(0.1)
+def clock():
+  try:
+    while True:
+      lcd.lcd_string("-CLOCK-", lcd.LCD_LINE_1)
+      lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
+      time.sleep(0.1)
 
 #def temp():
 #  try:
@@ -31,17 +31,17 @@ from MOTION import MOTION_CL
 #        GPIO.output(16, 0)
 #      time.sleep(0.1)
 
-def pirsensor():
-  try:
-    while True:
-      print 'debug:' +str (GPIO.input(PIR_PIN))
-      if GPIO.input(PIR_PIN) == True:
-        print 'debug: MOTION DETECTED'
-        lcd.lcd_string("MOTION DETECTED", lcd.LCD_LINE_2)
-        GPIO.output(5,1)
-        time.sleep(1)
-        GPIO.output(5,0)
-        time.sleep(1)
+#def pirsensor():
+#  try:
+#    while True:
+#      print 'debug:' +str (GPIO.input(PIR_PIN))
+#      if GPIO.input(PIR_PIN) == True:
+#        print 'debug: MOTION DETECTED'
+#        lcd.lcd_string("MOTION DETECTED", lcd.LCD_LINE_2)
+#        GPIO.output(5,1)
+#        time.sleep(1)
+#        GPIO.output(5,0)
+#        time.sleep(1)
 
   except KeyboardInterrupt:
     lcd.cleanup()
