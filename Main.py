@@ -21,7 +21,7 @@ lcd=LCD1602_CL()
 
 
 
-def clock()
+def clock():
   try:
     while True:
       lcd.lcd_string("-CLOCK-", lcd.LCD_LINE_1)
