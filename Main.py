@@ -5,7 +5,14 @@ from LED import LED_CL
 from BUZZER import BUZZER_CL
 from TEMP import TEMP_CL
 from MOTION import MOTION_CL
+import os
+import glob
 
+    os.system('modprobe w1-gpio')
+
+base_dir = '/sys/bus/w1/devices/'
+device_folder = glob.glob(base_dir + '28*')[0]
+device_file = device_folder + '/w1_slave'
 
 
 lcd=LCD1602_CL()
