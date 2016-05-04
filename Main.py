@@ -45,6 +45,4 @@ def clock():
 #        GPIO.output(5,0)
 #        time.sleep(1)
 ##Why?      elif GPIO.input(PIR_PIN) == False:
-##Why?        print 'debug: no motion detected'
-
-
+##Why?        print 'debug: no motion detected
