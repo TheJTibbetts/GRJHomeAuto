@@ -1,5 +1,4 @@
 # GRJHomeAuto
-GRJ Home automation repository
 <br /> This home automation program uses a varity of different sensors including:
 <br />. PIR
 <br />. Buzzer
