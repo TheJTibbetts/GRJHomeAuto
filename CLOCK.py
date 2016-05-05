@@ -16,7 +16,7 @@ class: CLOCK_CL
     device_folder = glob.glob(base_dir + '28*')[0]
     device_file = device_folder + '/w1_slave'
 
-## start of activator code ##
+# start of activator code
 
 #   try:
 #        while True:
