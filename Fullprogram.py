@@ -49,7 +49,7 @@ class TempSense(Board):
       temp_c = int(temp_string) / 1000.0
       #temp_f = temp_c * 9 / 5 + 32
       return temp_c
-###
+
   while True:
     temp = int(read_temp())
     read_string = str(temp)
@@ -66,7 +66,6 @@ class TempSense(Board):
       gpio.output(16, 0)
     
     time.sleep(0.1)
-###
 
 class PIR:
   
@@ -93,13 +92,6 @@ class PIR:
   time.sleep(2)
   print 'Ready'
 
-  #test buzzer
-  #print('DEBUG: Buzzer on')
-  #GPIO.output(5, GPIO.HIGH)
-  #time.sleep(5)
-  #print('DEBUG: Buzzer off')
-  #GPIO.output(5, GPIO.LOW)
-  
 class PretentiousLED:
   
   
@@ -116,8 +108,6 @@ class Menu:
   lcd.lcd_string("Welcome to GRJ", lcd.LCD_LINE_1)
   lcd.lcd_string("HomeAuto System", lcd.LCD_LINE_2)
 
-#Start of main code
-
 gpio = RPi.GPIO
 
 try:
@@ -125,7 +115,6 @@ try:
   GPIO.add_event_detect(PIR_PIN, GPIO.RISING, callback=MOTION)
   while 1:
   time.sleep(50)
-#end
 
 except KeyboardInterrupt:
   lcd.cleanup()
