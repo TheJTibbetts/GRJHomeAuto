@@ -59,3 +59,5 @@ def clock():
   except KeyboardInterrupt:
     lcd.cleanup()
     GPIO.cleanup()
+    
+clock()
