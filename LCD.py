@@ -1,3 +1,6 @@
+import RPi.GPIO as GPIO
+import time
+
 class LCD1602_CL:
 
     def __init__(self):
