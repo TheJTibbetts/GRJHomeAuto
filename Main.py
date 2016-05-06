@@ -1,3 +1,4 @@
+import RPi.GPIO as GPIO
 from BOARD import BOARD_CL
 from LCD import LCD1602_CL
 from BUTTON import BUTTON_CL
