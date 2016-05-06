@@ -58,7 +58,7 @@ def clock():
 #        GPIO.output(5,0)
 #        time.sleep(1)
 
-clock()
+  clock()
 
   except KeyboardInterrupt:
     lcd.cleanup()
