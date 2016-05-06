@@ -17,8 +17,6 @@ os.system('modprobe w1-gpio')
 base_dir = '/sys/bus/w1/devices/'
 device_folder = glob.glob(base_dir + '28*')[0]
 device_file = device_folder + '/w1_slave'
-
-lcd=LCD1602_CL()
 #ButtonPresses = [1,2,3,4]
 
 
@@ -27,8 +25,8 @@ lcd=LCD1602_CL()
 def clock():
   try:
     while True:
-      lcd.lcd_string("-CLOCK-", lcd.LCD_LINE_1)
-      lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
+      LCD1602_CL.lcd_string("-CLOCK-", LCD1602_CL.LCD_LINE_1)
+      LCD1602_CL.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), LCD1602_CL.LCD_LINE_2)
       time.sleep(0.1)
 
 ##def temp():
