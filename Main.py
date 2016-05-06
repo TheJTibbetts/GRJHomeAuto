@@ -10,6 +10,8 @@ import time
 import os
 import glob
 
+GPIO.setmode(GPIO.BCM)
+
 
 #os.system('modprobe w1-gpio')
 #base_dir = '/sys/bus/w1/devices/'
