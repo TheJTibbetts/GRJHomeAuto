@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO
 import os
 import glob
 import time
-from lcd1602 import LCD1602
+from LCD import LCD1602_CL
 
 GPIO.setmode(GPIO.BCM)
 
