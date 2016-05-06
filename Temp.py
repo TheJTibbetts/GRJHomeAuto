@@ -7,7 +7,7 @@ from LCD import LCD1602_CL
 GPIO.setmode(GPIO.BCM)
 
 leds = 20, 16
-lcd=LCD1602()
+lcd=LCD1602_CL()
 
 GPIO.setup(leds, GPIO.OUT)
 
