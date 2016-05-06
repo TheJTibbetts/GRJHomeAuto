@@ -17,5 +17,5 @@ class BOARD_CL:
 
         self.GPIO.cleanup()
 
-if __name__ == '__name__':
+if __name__ == '__main__':
     print("this works too")
