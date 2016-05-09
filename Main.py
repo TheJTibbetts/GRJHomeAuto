@@ -31,7 +31,7 @@ device_file = device_folder + '/w1_slave'
 #      lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
 #      time.sleep(0.1)
 
-def temp():
+def temp(device_file):
   try:
     while True:
       rtemp = int(tcl.read_temp())
