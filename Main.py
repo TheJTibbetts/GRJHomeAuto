@@ -1,5 +1,5 @@
-import RPi.GPIO as GPIO
-from BOARD import BOARD_CL
+#import RPi.GPIO as GPIO
+from BOARD import BOARD_CL as GPIO
 from LCD import LCD1602_CL
 from BUTTON import BUTTON_CL
 from LED import LED_CL
@@ -10,7 +10,7 @@ import time
 import os
 import glob
 
-GPIO.setmode(GPIO.BCM)
+#GPIO.setmode(GPIO.BCM)
 
 lcd=LCD1602_CL()
 tcl=TEMP_CL(4)
