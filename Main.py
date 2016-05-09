@@ -33,9 +33,9 @@ device_file = device_folder + '/w1_slave'
 def temp():
   try:
     while True:
-      rtemp = int(TEMP_CL.read_temp())
-      read_string = str(rtemp)
-      print(TEMP_CL.read_temp())
+      temp = int(read_temp())
+      read_string = str(temp)
+      print(read_temp())
       lcd.lcd_string("-TEMPERATURE-", lcd.LCD_LINE_1)
       lcd.lcd_string(read_string + " C", lcd.LCD_LINE_2)
       if int(temp) >= 24:
