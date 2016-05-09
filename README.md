@@ -6,6 +6,6 @@
 <br /> A red, Green, Blue Light emiting diode (RGB LED)
 <br /> A liquid crystal display (LCD) sceen
 <br /> Three buttons
-<br /> Protentious meter
-<br /> Temperature sensor
+<br /> One protentious meter
+<br /> A temperature sensor
 <br /> And a camera.
