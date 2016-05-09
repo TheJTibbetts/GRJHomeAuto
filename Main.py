@@ -33,8 +33,8 @@ device_file = device_folder + '/w1_slave'
 def temp():
   try:
     while True:
-      temp = int(TEMP_CL.read_temp())
-      read_string = str(temp)
+      rtemp = int(TEMP_CL.read_temp())
+      read_string = str(rtemp)
       print(TEMP_CL.read_temp())
       lcd.lcd_string("-TEMPERATURE-", lcd.LCD_LINE_1)
       lcd.lcd_string(read_string + " C", lcd.LCD_LINE_2)
