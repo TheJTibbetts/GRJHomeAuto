@@ -65,4 +65,4 @@ def temp():
     lcd.cleanup()
     GPIO.cleanup()
 
-temp(TEMP.py):
+temp(TEMP.py)
