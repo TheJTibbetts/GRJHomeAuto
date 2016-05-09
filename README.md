@@ -1,18 +1,11 @@
 # GRJHomeAuto
-<br /> This home automation program uses a varity of different sensors including:
-<br />. PIR
-<br />. Buzzer
-<br />. LED
-<br />. RGB_LED
-<br />. LCD sceen
-<br />. buttons
-<br />. protentious meter
-<br />. temperature sensor
-<br />
-<br />
-<br /> TO DO:
-<br /> OOP Motion.py
-<br /> OOP Temp.py
-<br />
-<br /> If we have time:
-<br />. Camera
+<br /> Our Home Automation system uses an array of sensors to provide a satisfactory automation experience. These include:
+<br /> A passive infrared (PIR) sensor
+<br /> A buzzer
+<br /> A light emiting diode (LED)
+<br /> A red, Green, Blue Light emiting diode (RGB LED)
+<br /> A liquid crystal display (LCD) sceen
+<br /> Three buttons
+<br /> Protentious meter
+<br /> Temperature sensor
+<br /> And a camera.
