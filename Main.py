@@ -31,7 +31,7 @@ device_file = device_folder + '/w1_slave'
 #      lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
 #      time.sleep(0.1)
 
-def temp():
+def temp(device_file):
   try:
     while True:
       tcl.read_temp_raw()
@@ -65,4 +65,4 @@ def temp():
     lcd.cleanup()
     GPIO.cleanup()
 
-temp(TEMP.py)
+temp(TEMP)
