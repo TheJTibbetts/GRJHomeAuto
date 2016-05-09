@@ -25,6 +25,7 @@ class TEMP_CL:
         return lines
         
     def read_temp(self):
+        lines = read_temp_raw(device_file)
         while lines[0].strip()[-3:] != 'YES':
                 time.sleep(0.2)
                 lines = read_temp_raw()
