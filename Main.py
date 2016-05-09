@@ -1,4 +1,4 @@
-#import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 from BOARD import BOARD_CL as GPIO
 from LCD import LCD1602_CL
 from BUTTON import BUTTON_CL
@@ -10,13 +10,12 @@ import time
 import os
 import glob
 
-#GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BCM)
 
 lcd=LCD1602_CL()
 tcl=TEMP_CL(4)
 
 os.system('modprobe w1-gpio')
-os.system('modprobe w1-therm')
 base_dir = '/sys/bus/w1/devices/'
 device_folder = glob.glob(base_dir + '28*')[0]
 device_file = device_folder + '/w1_slave'
