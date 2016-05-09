@@ -34,7 +34,7 @@ device_file = device_folder + '/w1_slave'
 def temp(device_file):
   try:
     while True:
-      tcl.read_temp_raw()
+      tcl.read_temp_raw(device_file)
       rtemp = int(tcl.read_temp())
       read_string = str(rtemp)
       print(tcl.read_temp())
