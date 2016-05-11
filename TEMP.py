@@ -26,7 +26,7 @@ class TEMP_CL:
         return lines
         
     def read_temp(self, read_temp_raw):
-        lines = read_temp_raw()
+        lines = self.read_temp_raw()
         print('1')
         while lines[0].strip()[-3:] != 'YES':
                 print('2')
