@@ -16,7 +16,7 @@ class TEMP_CL:
         self.board = BOARD_CL
 #        self.setup_thermometer()
         self.read_temp_raw()
-        self.read_temp(device_file)
+        self.read_temp(read_temp_raw)
         self.device_file = device_file
     
     def read_temp_raw(self):
@@ -27,7 +27,6 @@ class TEMP_CL:
         
     def read_temp(self, read_temp_raw):
         lines = read_temp_raw()
-        print(lines)
         while lines[0].strip()[-3:] != 'YES':
                 time.sleep(0.2)
                 lines = read_temp_raw()
