@@ -15,7 +15,7 @@ class TEMP_CL:
     def __init__(self, BOARD_CL):
         self.board = BOARD_CL
 #        self.setup_thermometer()
-        self.read_temp_raw()
+#        self.read_temp_raw()
         self.read_temp()
         self.device_file = device_file
     
