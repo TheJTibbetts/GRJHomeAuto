@@ -7,9 +7,9 @@ import time
 
 os.system('modprobe w1-therm')
 
-#base_dir = '/sys/bus/w1/devices/'
-#device_folder = glob.glob(base_dir + '28*')[0]
-#device_file = device_folder + '/w1_slave'
+base_dir = '/sys/bus/w1/devices/'
+device_folder = glob.glob(base_dir + '28*')[0]
+device_file = device_folder + '/w1_slave'
 
 class TEMP_CL:
     def __init__(self, BOARD_CL):
@@ -19,16 +19,13 @@ class TEMP_CL:
         self.read_temp()
     
     def read_temp_raw(self):
-        base_dir = '/sys/bus/w1/devices/'
-        device_folder = glob.glob(base_dir + '28*')[0]
-        device_file = device_folder + '/w1_slave'
         f = open(device_file, 'r')
         lines = f.readlines()
         f.close()
         return lines
         
     def read_temp(self):
-        lines = read_temp_raw(device_file)
+        lines = read_temp_raw()
         while lines[0].strip()[-3:] != 'YES':
                 time.sleep(0.2)
                 lines = read_temp_raw()
