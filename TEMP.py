@@ -17,10 +17,10 @@ class TEMP_CL:
 #        self.setup_thermometer()
         self.read_temp_raw()
         self.read_temp()
-        self.device_file = device_file
+        self.device = device_file
     
     def read_temp_raw(self):
-        f = open(device_file, 'r')
+        f = open(device, 'r')
         lines = f.readlines()
         f.close()
         return lines
