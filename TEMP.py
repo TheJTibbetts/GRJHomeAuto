@@ -19,13 +19,13 @@ class TEMP_CL:
         self.read_temp()
         self.device_file = device_file
     
-    def read_temp_raw(self):
+    def read_temp_raw(self, device_file):
         f = open(device_file, 'r')
         lines = f.readlines()
         f.close()
         return lines
         
-    def read_temp(self):
+    def read_temp(self, read_temp_raw):
         lines = read_temp_raw()
         while lines[0].strip()[-3:] != 'YES':
                 time.sleep(0.2)
