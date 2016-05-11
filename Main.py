@@ -6,6 +6,7 @@ from LED import LED_CL
 from BUZZER import BUZZER_CL
 from TEMP import TEMP_CL
 from MOTION import MOTION_CL
+from pi_Cam import Picture
 import time
 import os
 import glob
@@ -47,7 +48,12 @@ def temp(device_file):
         GPIO.output(20, 1)
         GPIO.output(16, 0)
       time.sleep(0.1)
-
+##def piCamera():
+#   try:
+#     while True:
+#       if GPIO.input(PIR_PIN) == True:
+#         pi_Cam
+          
 ##def pirsensor():
 #  try:
 #    while True:
