@@ -19,8 +19,6 @@ class TEMP_CL:
         self.read_temp(device_file)
         self.device_file = device_file
     
-    print(device_file)
-    
     def read_temp_raw(self):
         f = open(device_file, 'r')
         lines = f.readlines()
@@ -29,6 +27,7 @@ class TEMP_CL:
         
     def read_temp(self, read_temp_raw):
         lines = read_temp_raw()
+        print(lines)
         while lines[0].strip()[-3:] != 'YES':
                 time.sleep(0.2)
                 lines = read_temp_raw()
