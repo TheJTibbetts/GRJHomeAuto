@@ -26,9 +26,12 @@ class TEMP_CL:
         return lines
         
     def read_temp(self):
-#        lines = read_temp_raw()
+        lines = read_temp_raw()
+        print('1')
         while lines[0].strip()[-3:] != 'YES':
+                print('2')
                 time.sleep(0.2)
+                print('3')
                 lines = read_temp_raw()
         equals_pos = lines[1].find('t=')
         if equals_pos != -1:
