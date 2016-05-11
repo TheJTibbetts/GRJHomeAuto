@@ -12,11 +12,12 @@ device_folder = glob.glob(base_dir + '28*')[0]
 device_file = device_folder + '/w1_slave'
 
 class TEMP_CL:
-    def __init__(self, BOARD_CL):
+    def __init__(self, BOARD_CL, device_file):
         self.board = BOARD_CL
 #        self.setup_thermometer()
         self.read_temp_raw()
         self.read_temp()
+        self.device_file()
     
     def read_temp_raw(self):
         f = open(device_file, 'r')
