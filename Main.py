@@ -12,6 +12,7 @@ import os
 import glob
 
 GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 
 lcd=LCD1602_CL()
 tcl=TEMP_CL(4)
@@ -25,29 +26,30 @@ device_file = device_folder + '/w1_slave'
 
 
 
-#def clock():
-#  try:
-#    while True:
-#      lcd.lcd_string("-CLOCK-", lcd.LCD_LINE_1)
-#      lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
-#      time.sleep(0.1)
-
-def temp():
+def clock():
   try:
     while True:
-      tcl.read_temp_raw()
-      rtemp = int(tcl.read_temp())
-      read_string = str(rtemp)
-      print(tcl.read_temp())
-      lcd.lcd_string("-TEMPERATURE-", lcd.LCD_LINE_1)
-      lcd.lcd_string(read_string + " C", lcd.LCD_LINE_2)
-      if int(rtemp) >= 24:
-        GPIO.output(20, 0)
-        GPIO.output(16, 1)
-      elif int(rtemp) < 23.9:
-        GPIO.output(20, 1)
-        GPIO.output(16, 0)
+      lcd.lcd_string("-CLOCK-", lcd.LCD_LINE_1)
+      lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
       time.sleep(0.1)
+
+##def temp():
+#  try:
+#    while True:
+#      tcl.read_temp_raw()
+#      rtemp = int(tcl.read_temp())
+#      read_string = str(rtemp)
+#      print(tcl.read_temp())
+#      lcd.lcd_string("-TEMPERATURE-", lcd.LCD_LINE_1)
+#      lcd.lcd_string(read_string + " C", lcd.LCD_LINE_2)
+#      if int(rtemp) >= 24:
+#        GPIO.output(20, 0)
+#        GPIO.output(16, 1)
+#      elif int(rtemp) < 23.9:
+#        GPIO.output(20, 1)
+#        GPIO.output(16, 0)
+#      time.sleep(0.1)
+
 ##def piCamera():
 #   try:
 #     while True:
