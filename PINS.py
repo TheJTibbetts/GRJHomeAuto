@@ -16,3 +16,4 @@ Buzzer = 5
 Button_1 = 26
 Button_2 = 19
 Button_3 = 13
+Camera = Dsi
