@@ -16,7 +16,7 @@ import glob
 
 lcd=LCD1602_CL()
 tcl=TEMP_CL(4)
-led=LED_CL(16, 20)
+#led=LED_CL(16, 20)
 
 os.system('modprobe w1-gpio')
 base_dir = '/sys/bus/w1/devices/'
@@ -37,18 +37,18 @@ device_file = device_folder + '/w1_slave'
 def temp():
   try:
     while True:
-      led.setup_led(20)
-      led.setup_led(16)
+      GPIO.setup(20, GPIO.OUT)
+      GPIO.setup(16, GPIO.OUT)
       rtemp = int(tcl.read_temp())
       read_string = str(rtemp)
       print(tcl.read_temp())
       lcd.lcd_string("-TEMPERATURE-", lcd.LCD_LINE_1)
       lcd.lcd_string(read_string + " C", lcd.LCD_LINE_2)
       if int(rtemp) >= 24:
-        led.ledOn(16)
+        GPIO.output(16, 1)
         print(read_string)
       elif int(rtemp) < 23.9:
-        led.ledOn(20)
+        GPIO.output(20, 1)
         print(read_string)
       time.sleep(0.1)
 
