@@ -42,11 +42,11 @@ def temp():
       lcd.lcd_string("-TEMPERATURE-", lcd.LCD_LINE_1)
       lcd.lcd_string(read_string + " C", lcd.LCD_LINE_2)
       if int(rtemp) >= 24:
-        GPIO.output(20, 0)
-        GPIO.output(16, 1)
+        #GPIO.output(20, 0)
+        #GPIO.output(16, 1)
       elif int(rtemp) < 23.9:
-        GPIO.output(20, 1)
-        GPIO.output(16, 0)
+        #GPIO.output(20, 1)
+        #GPIO.output(16, 0)
       time.sleep(0.1)
 
 ##def piCamera():
