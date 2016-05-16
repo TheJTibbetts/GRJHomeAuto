@@ -10,7 +10,7 @@ os.system('modprobe w1-gpio')
 base_dir = '/sys/bus/w1/devices/'
 device_folder = glob.glob(base_dir + '28*')[0]
 device_file = device_folder + '/w1_slave'
-
+global read_temp_raw
 
 class TEMP_CL:
     def __init__(self, BOARD_CL):
@@ -21,7 +21,6 @@ class TEMP_CL:
         self.device_file = device_file
     
     def read_temp_raw(self):
-        global read_temp_raw
         f = open(device_file, 'r')
         lines = f.readlines()
         f.close()
