@@ -16,24 +16,27 @@ class TEMP_CL:
     def __init__(self, BOARD_CL):
         self.board = BOARD_CL
 #        self.setup_thermometer()
-        self.read_temp_raw()
+#        self.read_temp_raw()
         self.read_temp()
         self.device_file = device_file
     
-    def read_temp_raw(self):
+#    def read_temp_raw(self):
+#        f = open(device_file, 'r')
+#        lines = f.readlines()
+#        f.close()
+#        return lines
+        
+    def read_temp(self):
         f = open(device_file, 'r')
         lines = f.readlines()
         f.close()
-        return lines
-        
-    def read_temp(self):
-        lines = read_temp_raw()
+        lines
         print('1')
         while lines[0].strip()[-3:] != 'YES':
                 print('2')
                 time.sleep(0.2)
                 print('3')
-                lines = read_temp_raw()
+                lines
         equals_pos = lines[1].find('t=')
         if equals_pos != -1:
                 temp_string = lines[1][equals_pos+2:]
