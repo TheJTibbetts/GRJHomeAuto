@@ -12,7 +12,7 @@ import os
 import glob
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setmode(GPIO.BOARD)
+#GPIO.setmode(GPIO.BOARD)
 
 lcd=LCD1602_CL()
 tcl=TEMP_CL(4)
