@@ -72,4 +72,4 @@ def pirsensor():
         lcd.cleanup()
         GPIO.cleanup()
 
-pirsensor(MOTION_CL)
+pirsensor()
