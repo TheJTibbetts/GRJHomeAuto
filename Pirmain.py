@@ -58,6 +58,7 @@ device_file = device_folder + '/w1_slave'
 def pirsensor():
     try:
         while True:
+            GPIO.setup(32, GPIO.IN)
             print ('debug:' +str (GPIO.input(32)))
             if GPIO.input(PIR_PIN) == True:
                 print ('debug: MOTION DETECTED')
