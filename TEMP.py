@@ -25,7 +25,6 @@ class TEMP_CL:
         lines = f.readlines()
         f.close()
         return lines
-    lines = read_temp_raw(read_temp_raw)
         
     def read_temp(self, read_temp_raw):
         lines = read_temp_raw()
