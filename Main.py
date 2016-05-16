@@ -36,6 +36,8 @@ device_file = device_folder + '/w1_slave'
 def temp():
   try:
     while True:
+      GPIO.setup(20, GPIO.OUT)
+      GPIO.setup(16, GPIO.OUT
       rtemp = int(tcl.read_temp())
       read_string = str(rtemp)
       print(tcl.read_temp())
