@@ -44,9 +44,11 @@ def temp():
       if int(rtemp) >= 24:
         #GPIO.output(20, 0)
         #GPIO.output(16, 1)
+        print(rtemp)
       elif int(rtemp) < 23.9:
         #GPIO.output(20, 1)
         #GPIO.output(16, 0)
+        print(temp)
       time.sleep(0.1)
 
 ##def piCamera():
