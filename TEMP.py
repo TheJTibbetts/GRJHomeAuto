@@ -10,16 +10,14 @@ os.system('modprobe w1-gpio')
 base_dir = '/sys/bus/w1/devices/'
 device_folder = glob.glob(base_dir + '28*')[0]
 device_file = device_folder + '/w1_slave'
-global read_temp_raw
-str(read_temp_raw)
-print read_temp_raw
+
 
 class TEMP_CL:
-    def __init__(self, BOARD_CL, read_temp_raw):
+    def __init__(self, BOARD_CL):
         self.board = BOARD_CL
 #        self.setup_thermometer()
         self.read_temp_raw()
-        self.read_temp(read_temp_raw)
+        self.read_temp()
         self.device_file = device_file
     
     def read_temp_raw(self):
@@ -28,7 +26,7 @@ class TEMP_CL:
         f.close()
         return lines
         
-    def read_temp(self, read_temp_raw):
+    def read_temp(self):
         lines = read_temp_raw()
         print('1')
         while lines[0].strip()[-3:] != 'YES':
