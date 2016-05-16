@@ -6,7 +6,7 @@ from LED import LED_CL
 from BUZZER import BUZZER_CL
 from TEMP import TEMP_CL
 from MOTION import MOTION_CL
-from pi_Cam import Picture
+import pi_Cam
 import time
 import os
 import glob
@@ -63,6 +63,7 @@ def pirsensor():
             if GPIO.input(32) == True:
                 print ('debug: MOTION DETECTED')
                 lcd.lcd_string("MOTION DETECTED", lcd.LCD_LINE_2)
+                os.system('python pi_Cam.py')
                 GPIO.output(5,1)
                 time.sleep(1)
                 GPIO.output(5,0)
