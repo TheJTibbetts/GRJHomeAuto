@@ -67,6 +67,8 @@ def pirsensor():
                 time.sleep(1)
                 GPIO.output(5,0)
                 time.sleep(1)
+            elif GPIO.input(32) == FALSE:
+                lcd.lcd_string("", lcd.LCD_LINE_2)
 
 
     except KeyboardInterrupt:
