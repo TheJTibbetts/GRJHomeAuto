@@ -56,20 +56,20 @@ device_file = device_folder + '/w1_slave'
 #         pi_Cam
           
 def pirsensor():
-  try:
-    while True:
-      print 'debug:' +str (GPIO.input(PIR_PIN))
-      if GPIO.input(PIR_PIN) == True:
-        print 'debug: MOTION DETECTED'
-        lcd.lcd_string("MOTION DETECTED", lcd.LCD_LINE_2)
-        GPIO.output(5,1)
-        time.sleep(1)
-        GPIO.output(5,0)
-        time.sleep(1)
+          try:
+                    while True:
+                              print 'debug:' +str(GPIO.input(PIR_PIN))
+                              if GPIO.input(PIR_PIN) == True:
+                                        print 'debug: MOTION DETECTED'
+                                        lcd.lcd_string("MOTION DETECTED", lcd.LCD_LINE_2)
+                                        GPIO.output(5,1)
+                                        time.sleep(1)
+                                        GPIO.output(5,0)
+                                        time.sleep(1)
 
 
-  except KeyboardInterrupt:
-    lcd.cleanup()
-    GPIO.cleanup()
+          except KeyboardInterrupt:
+                    lcd.cleanup()
+                    GPIO.cleanup()
 
 pirsensor(MOTION)
