@@ -37,7 +37,7 @@ def temp():
   try:
     while True:
       GPIO.setup(20, GPIO.OUT)
-      GPIO.setup(16, GPIO.OUT
+      GPIO.setup(16, GPIO.OUT)
       rtemp = int(tcl.read_temp())
       read_string = str(rtemp)
       print(tcl.read_temp())
