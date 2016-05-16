@@ -60,7 +60,7 @@ def pirsensor():
         while True:
             GPIO.setup(32, GPIO.IN)
             print ('debug:' +str (GPIO.input(32)))
-            if GPIO.input(PIR_PIN) == True:
+            if GPIO.input(32) == True:
                 print ('debug: MOTION DETECTED')
                 lcd.lcd_string("MOTION DETECTED", lcd.LCD_LINE_2)
                 GPIO.output(5,1)
