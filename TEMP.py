@@ -10,13 +10,15 @@ os.system('modprobe w1-gpio')
 base_dir = '/sys/bus/w1/devices/'
 device_folder = glob.glob(base_dir + '28*')[0]
 device_file = device_folder + '/w1_slave'
+read_temp_raw = global
+read_temp_raw = 0
 
 class TEMP_CL:
     def __init__(self, BOARD_CL):
         self.board = BOARD_CL
 #        self.setup_thermometer()
         self.read_temp_raw()
-        self.read_temp()
+        self.read_temp(read_temp_raw)
         self.device_file = device_file
     
     def read_temp_raw(self):
