@@ -70,6 +70,10 @@ def temp():
 #        GPIO.output(5,0)
 #        time.sleep(1)
 
+##def LED():
+#   try:
+#     while True:
+#       
 
   except KeyboardInterrupt:
     lcd.cleanup()
