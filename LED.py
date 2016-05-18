@@ -8,31 +8,31 @@ class LED_CL:
     self.pinB = 20
     self.setup_led()
   
-  def setup_led(self):
+  def setup_ledW(self):
     self.board.GPIO.setup(self.pinW, self.board.GPIO.OUT)
   
-  def ledOn(self):
+  def ledOnW(self):
     self.board.GPIO.output(self.pinW, self.board.GPIO.HIGH)
   
-  def ledOff(self):
+  def ledOffW(self):
     self.board.GPIO.output(self.pinW, self.board.GPIO.LOW)
     
-  def setup_led(self):
+  def setup_ledR(self):
     self.board.GPIO.setup(self.pinR, self.board.GPIO.OUT)
   
-  def ledOn(self):
+  def ledOnR(self):
     self.board.GPIO.output(self.pinR, self.board.GPIO.HIGH)
   
-  def ledOff(self):
+  def ledOffR(self):
     self.board.GPIO.output(self.pinR, self.board.GPIO.LOW)
 
-  def setup_led(self):
+  def setup_ledB(self):
     self.board.GPIO.setup(self.pinB, self.board.GPIO.OUT)
   
-  def ledOn(self):
+  def ledOnB(self):
     self.board.GPIO.output(self.pinB, self.board.GPIO.HIGH)
   
-  def ledOff(self):
+  def ledOffB(self):
     self.board.GPIO.output(self.pinB, self.board.GPIO.LOW)
 
 
