@@ -1,12 +1,14 @@
 from BOARD import BOARD_CL
 
 class LED_CL:
-  def __init__(self, BOARD_CL, pinR):
+  def __init__(self, BOARD_CL, pinW, pinR, pinB):
     self.board = BOARD_CL
     self.pinW = 6
     self.pinR = 16
     self.pinB = 20
-    self.setup_led()
+    self.setup_ledW()
+    self.setup_ledR()
+    self.setup_ledB()
   
   def setup_ledW(self):
     self.board.GPIO.setup(self.pinW, self.board.GPIO.OUT)
