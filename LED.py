@@ -10,7 +10,7 @@ class LED_CL:
     self.setup_ledR()
     self.setup_ledB()
   
-  def setup_ledW(self, BOARD_CL):
+  def setup_ledW(self):
     self.board.GPIO.setup(self.pinW, self.board.GPIO.OUT)
   
   def ledOnW(self):
