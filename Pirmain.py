@@ -49,12 +49,6 @@ device_file = device_folder + '/w1_slave'
 #        GPIO.output(16, 0)
 #      time.sleep(0.1)
 
-##def piCamera():
-#   try:
-#     while True:
-#       if GPIO.input(PIR_PIN) == True:
-#         pi_Cam
-          
 def pirsensor():
     try:
         while True:
