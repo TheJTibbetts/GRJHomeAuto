@@ -1,10 +1,12 @@
 from time import sleep
 
 class BUTTON_CL:
-    def __init__(self, BOARD_CL, pin):
+    def __init__(self, BOARD_CL, 13, 19, 26):
         self.__board = BOARD_CL
-        self.__pin = pin
-        self.__setup_button()
+        self.__Rpin = 13
+        self.__Lpin = 19
+        self.__Mpin = 26
+        self.__setup_buttonL()
         self.__pressed = False
 
     @property
@@ -16,11 +18,27 @@ class BUTTON_CL:
         self.__pressed = value
 
 
-    def __setup_button(self, resistor=False):
+    def __setup_buttonL(self, resistor=False):
         if not resistor:
-            self.__board.GPIO.setup(self.__pin, self.__board.GPIO.IN)
+            self.__board.GPIO.setup(self.__Lpin, self.__board.GPIO.IN)
         elif resistor:
-            self.__board.GPIO.set(self.__pin, self.__board.GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+            self.__board.GPIO.set(self.__Lpin, self.__board.GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+        else:
+            print('Error setting up resistor')
+        
+    def __setup_buttonR(self, resistor=False):
+        if not resistor:
+            self.__board.GPIO.setup(self.__Rpin, self.__board.GPIO.IN)
+        elif resistor:
+            self.__board.GPIO.set(self.__Rpin, self.__board.GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+        else:
+            print('Error setting up resistor')
+        
+    def __setup_buttonM(self, resistor=False):
+        if not resistor:
+            self.__board.GPIO.setup(self.__Mpin, self.__board.GPIO.IN)
+        elif resistor:
+            self.__board.GPIO.set(self.__Mpin, self.__board.GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
         else:
             print('Error setting up resistor')
         
