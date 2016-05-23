@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-from board import BOARD
+from BOARD import Board
 from LCD import LCD1602_CL
 from BUTTON import BUTTON_CL
 from LED import LED_CL
@@ -16,7 +16,7 @@ import glob
 
 lcd=LCD1602_CL()
 tcl=TEMP_CL(4)
-led=LED_CL(6, 16, 20, BOARD_CL)
+led=LED_CL(6, 16, 20, Board)
 
 os.system('modprobe w1-gpio')
 base_dir = '/sys/bus/w1/devices/'
