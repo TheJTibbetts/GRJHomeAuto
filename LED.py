@@ -18,22 +18,22 @@ class LED_CL:
    
    
   def ledOnW(self):
-    self.board.GPIO.output(self.pinW, self.board.GPIO.HIGH)
+    GPIO.output(self.pinW, GPIO.HIGH)
     
   def ledOffW(self):
-    self.board.GPIO.output(self.pinW, self.board.GPIO.LOW)
+    GPIO.output(self.pinW, GPIO.LOW)
   
   def ledOnR(self):
-    self.board.GPIO.output(self.pinR, self.board.GPIO.HIGH)
+    GPIO.output(self.pinR, GPIO.HIGH)
     
   def ledOffR(self):
-    self.board.GPIO.output(self.pinR, self.board.GPIO.LOW)
+    GPIO.output(self.pinR, GPIO.LOW)
   
   def ledOnB(self):
-    self.board.GPIO.output(self.pinB, self.board.GPIO.HIGH)
+    GPIO.output(self.pinB, GPIO.HIGH)
     
   def ledOffB(self):
-    self.board.GPIO.output(self.pinB, self.board.GPIO.LOW)
+    GPIO.output(self.pinB, GPIO.LOW)
 
 
 # +if __name__ == "__main__":
