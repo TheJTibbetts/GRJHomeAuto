@@ -37,10 +37,10 @@ device_file = device_folder + '/w1_slave'
 def temp():
   try:
     while True:
-      led.setup_ledR(16)
-      led.setup_ledB(20)
-      #GPIO.setup(20, GPIO.OUT)
-      #GPIO.setup(16, GPIO.OUT)
+      #led.setup_ledR(16)
+      #led.setup_ledB(20)
+      GPIO.setup(20, GPIO.OUT)
+      GPIO.setup(16, GPIO.OUT)
       rtemp = int(tcl.read_temp())
       read_string = str(rtemp)
       print(tcl.read_temp())
