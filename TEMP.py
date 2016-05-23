@@ -1,4 +1,4 @@
-from BOARD import BOARD_CL
+from BOARD import Board
 from RGBLED import RGBLED_CL
 from BUTTON import BUTTON_CL
 import os
@@ -13,8 +13,8 @@ device_file = device_folder + '/w1_slave'
 
 
 class TEMP_CL:
-    def __init__(self, BOARD_CL):
-        self.board = BOARD_CL
+    def __init__(self, Board):
+        self.board = Board
 #        self.setup_thermometer()
 #        self.read_temp_raw()
         self.read_temp()
