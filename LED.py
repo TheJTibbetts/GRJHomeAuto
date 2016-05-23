@@ -2,17 +2,17 @@ import RPi.GPIO as GPIO
 from BOARD import BOARD_CL
  
 class LED_CL:
-  def __init__(self, BOARD_CL, pinW, pinB):
+  def __init__(self, BOARD_CL, pinW, pinB, pinR):
     self.board = BOARD_CL
     self.pinW = 6
     self.pinR = 16
     self.pinB = 20
-    self.setup_ledW()
-    self.setup_ledR()
-    self.setup_ledB()
+    self.setup_led()
    
-  def setup_ledW(self):
-    self.board.GPIO.setup(self.pinW, self.board.GPIO.OUT)
+  def setup_led(self):
+    self.board.GPIO.setup(self.pinW, self.pinB, self.pinR, self.board.GPIO.OUT)
+   
+   
    
   def ledOnW(self):
     self.board.GPIO.output(self.pinW, self.board.GPIO.HIGH)
@@ -20,18 +20,12 @@ class LED_CL:
   def ledOffW(self):
     self.board.GPIO.output(self.pinW, self.board.GPIO.LOW)
   
-  def setup_ledR(self):
-    self.board.GPIO.setup(self.pinR, self.board.GPIO.OUT)
-   
   def ledOnR(self):
     self.board.GPIO.output(self.pinR, self.board.GPIO.HIGH)
     
   def ledOffR(self):
     self.board.GPIO.output(self.pinR, self.board.GPIO.LOW)
   
-  def setup_ledB(self):
-    self.board.GPIO.setup(self.pinB, self.board.GPIO.OUT)
-   
   def ledOnB(self):
     self.board.GPIO.output(self.pinB, self.board.GPIO.HIGH)
     
