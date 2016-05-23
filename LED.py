@@ -1,6 +1,5 @@
 #import RPi.GPIO as GPIO
 from BOARD import BOARD_CL
-import RPi.GPIO
 
 
 class LED_CL:
