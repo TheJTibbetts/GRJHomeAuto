@@ -1,19 +1,19 @@
 from BOARD import Board
 
 class BUZZER_CL:
-  def __init__(self, Board, pin):
+  def __init__(self, Board, pinB):
     self.board = Board
-    self.pin = pin
+    self.pinB = 5
     self.setup_buzzer()
   
   def setup_buzzer(self):
-    self.board.GPIO.setup(self.pin, self.board.GPIO.OUT)
+    GPIO.setup(self.pinB, GPIO.OUT)
   
   def buzzerOn(self):
-    self.board.GPIO.output(self.pin, self.board.GPIO.HIGH)
+    GPIO.output(self.pinB, GPIO.HIGH)
     
   def buzzerOff(self):
-    self.board.GPIO.output(self.pin, self.board.GPIO.LOW)
+    GPIO.output(self.pinB, GPIO.LOW)
     
   
 if __name__ == "__main__":
