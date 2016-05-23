@@ -17,9 +17,9 @@ class BUZZER_CL:
     
   
 if __name__ == "__main__":
-    from BOARD import BOARD_CL
+    from BOARD import Board
     from time import sleep
-    rpi = BOARD_CL()
+    rpi = Board()
     buzz = BUZZER_CL(rpi, 5)
     buzz.buzzerOn()
     sleep(3)
