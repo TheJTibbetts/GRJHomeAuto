@@ -1,7 +1,7 @@
 from time import sleep
 
 class BUTTON_CL:
-    def __init__(self, BOARD_CL, 13, 19, 26):
+    def __init__(self, BOARD_CL, Rpin, Lpin, Mpin):
         self.__board = BOARD_CL
         self.__Rpin = 13
         self.__Lpin = 19
