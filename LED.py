@@ -1,17 +1,17 @@
-import RPi.GPIO as GPIO
-from BOARD import BOARD_CL
+#import RPi.GPIO as GPIO
+from board import BOARD
 
 
 class LED_CL:
-  def __init__(self, BOARD_CL, pinW, pinB, pinR):
-    self.board = BOARD_CL
+  def __init__(self, BOARD, pinW, pinB, pinR):
+    self.board = BOARD
     self.pinW = 6
     self.pinR = 16
     self.pinB = 20
     self.setup_led()
    
   def setup_led(self):
-    GPIO.setup(self.pinW, GPIO.OUT)
+    self.board.GPIO.setup(self.pinW, self.board.GPIO.OUT)
    
    
    
