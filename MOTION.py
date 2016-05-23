@@ -1,8 +1,8 @@
-from BOARD import BOARD_CL
+from BOARD import Board
 
 class MOTION_CL:
-    def __init__(self, BOARD_CL, pin):
-        self.__board = BOARD_CL
+    def __init__(self, Board, pin):
+        self.__board = Board
         self.__pin = pin
         self.__setup_pir()
         self.__triggered = False
