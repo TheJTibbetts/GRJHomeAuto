@@ -17,11 +17,11 @@ class LED_CL:
 
 
 
- +if __name__ == "__main__":
- +    from BOARD import BOARD_CL
- +    from time import sleep
- +    rpi = BOARD_CL()
- +    led = LED_CL(rpi, 17)
- +    led.ledOn()
- +    sleep(3)
- +    led.ledOff()
+# +if __name__ == "__main__":
+# +    from BOARD import BOARD_CL
+# +    from time import sleep
+# +    rpi = BOARD_CL()
+# +    led = LED_CL(rpi, 17)
+# +    led.ledOn()
+# +    sleep(3)
+# +    led.ledOff()
