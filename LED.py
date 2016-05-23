@@ -10,8 +10,8 @@ class LED_CL:
     self.pinB = 20
     self.setup_led()
    
-  def setup_led(self, Board):
-    self.board.GPIO.setup(self.pinW, self.board.GPIO.OUT)
+  def setup_led(self):
+    GPIO.setup(self.pinW, self.pinB, self.pinR,GPIO.OUT)
    
    
    
