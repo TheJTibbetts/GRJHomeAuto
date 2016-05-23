@@ -14,7 +14,7 @@ import glob
 GPIO.setmode(GPIO.BCM)
 
 lcd=LCD1602_CL()
-tcl=TEMP_CL(4)
+#tcl=TEMP_CL(4)
 
 os.system('modprobe w1-gpio')
 base_dir = '/sys/bus/w1/devices/'
