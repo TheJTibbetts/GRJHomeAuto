@@ -1,4 +1,5 @@
-from BOARD import Board
+
+import RPi.GPIO as GPIO
 
 class MOTION_CL:
     def __init__(self, pinP):
