@@ -1,5 +1,4 @@
 import RPi.GPIO as GPIO
-from BOARD import Board
 from LCD import LCD1602_CL
 from BUTTON import BUTTON_CL
 from LED import LED_CL
