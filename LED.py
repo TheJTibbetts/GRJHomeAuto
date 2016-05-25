@@ -3,8 +3,7 @@ from BOARD import Board
 
 
 class LED_CL:
-  def __init__(self, Board, pinW, pinB, pinR):
-    self.board = Board
+  def __init__(self, pinW, pinB, pinR):
     self.pinW = 6
     self.pinR = 16
     self.pinB = 20
