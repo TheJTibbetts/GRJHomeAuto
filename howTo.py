@@ -1,7 +1,7 @@
-from lcd1602 import LCD1602
+from LCD import LCD1602_CL
 from time import sleep
 
-lcd = LCD1602()
+lcd = LCD1602_CL()
 
 lcd.lcd_string("Please read this",lcd.LCD_LINE_1)
 lcd.lcd_string("for help",lcd.LCD_LINE_2)
