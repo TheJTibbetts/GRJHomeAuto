@@ -19,4 +19,4 @@
 <br /> Add LCD code to each def X
 <br /> Input menu code/debug X
 <br /> <br /> <br />
-<br /> George did most the work, rob did nothing and Jake spent most his time getting angry at rob for doing nothing
+<br /> George did a lot of work, rob did nothing and Jake spent most his time, between troubleshooting the problems in georges code, getting angry at rob for doing nothing
