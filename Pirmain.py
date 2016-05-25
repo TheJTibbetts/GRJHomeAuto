@@ -54,7 +54,7 @@ def pirsensor():
     try:
         while True:
             buzz.setup_buzzer()
-            mot.__setup_pir()
+            mot.setup_pir()
             if GPIO.input(32) == True:
                 print ('debug: MOTION DETECTED')
                 lcd.lcd_string("MOTION DETECTED", lcd.LCD_LINE_2)
