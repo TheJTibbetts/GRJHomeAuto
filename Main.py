@@ -120,18 +120,18 @@ try:
   a = ['one', 'two', 'three', 'four', 'five']
   count = 0
 
-  def button.pressed():
-  howto()
-    count += 1
-  clock()
-    count += 1
-  temp()
-    count += 1
-  pirsensor()
-    count += 1
-  LED()
-    if count == 4:
-      count = 0
+  def buttonPressed():
+    howto()
+      count += 1
+    clock()
+      count += 1
+    temp()
+      count += 1
+    pirsensor()
+      count += 1
+    LED()
+      if count == 4:
+        count = 0
 
 except KeyboardInterrupt:
   lcd.cleanup()
