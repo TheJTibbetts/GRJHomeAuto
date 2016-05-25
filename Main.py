@@ -17,6 +17,8 @@ import glob
 lcd=LCD1602_CL()
 tcl=TEMP_CL(4)
 led=LED_CL(6, 16, 20, Board)
+buzz=BUZZER_CL(6)
+mot=MOTION_CL(22)
 
 os.system('modprobe w1-gpio')
 base_dir = '/sys/bus/w1/devices/'
