@@ -1,8 +1,7 @@
 from BOARD import Board
 
 class BUZZER_CL:
-  def __init__(self, Board, pinB):
-    self.board = Board
+  def __init__(self, pinB):
     self.pinB = 5
     self.setup_buzzer()
   
