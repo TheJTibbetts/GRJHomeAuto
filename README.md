@@ -12,5 +12,5 @@
 <br /> <br /> # Menu system List
 <br /> Clock ✓
 <br /> Temperature ✓
-<br /> Motion Detector ✓
+<br /> Motion Detector X
 <br /> Lights X
