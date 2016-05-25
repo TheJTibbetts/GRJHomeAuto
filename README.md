@@ -10,6 +10,7 @@
 <br /> A temperature sensor ✓
 <br /> And a camera. ✓ - Cancelled
 <br /> <br /> Menu system List
+<br /> Help start text ✓
 <br /> Clock ✓
 <br /> Temperature ✓
 <br /> Motion Detector ✓
