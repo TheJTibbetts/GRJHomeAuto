@@ -25,7 +25,7 @@ class MOTION_CL:
             print('Pir error')
         
         # add interrupt
-        GPIO.add_event_detect(self.pinP, GPIO.FALLING, callback=self.my_callback, bouncetime=300)
+        #GPIO.add_event_detect(self.pinP, GPIO.FALLING, callback=self.my_callback, bouncetime=300)
         
     def my_callback(self, channel):
         self.pressed = True
