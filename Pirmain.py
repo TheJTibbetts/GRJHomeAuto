@@ -14,6 +14,7 @@ import glob
 GPIO.setmode(GPIO.BCM)
 buzz=BUZZER_CL
 lcd=LCD1602_CL()
+mot=MOTION_CL()
 #tcl=TEMP_CL(4)
 
 os.system('modprobe w1-gpio')
@@ -53,14 +54,14 @@ def pirsensor():
     try:
         while True:
             buzz.setup_buzzer()
-            GPIO.setup(5, GPIO.OUT)
+            mot.__setup_pir()
             if GPIO.input(32) == True:
                 print ('debug: MOTION DETECTED')
                 lcd.lcd_string("MOTION DETECTED", lcd.LCD_LINE_2)
                 os.system('python pi_Cam.py')
-                GPIO.output(5,1)
+                buzz.buzzerOn()
                 time.sleep(1)
-                GPIO.output(5,0)
+                buzz.buzzerOff()
                 time.sleep(1)
             elif GPIO.input(32) == False:
                 lcd.lcd_string("", lcd.LCD_LINE_2)
