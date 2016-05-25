@@ -9,10 +9,10 @@ class BUZZER_CL:
   def setup_buzzer(self):
     GPIO.setup(self.pinB, GPIO.OUT)
   
-  def buzzerOn(self):
+  def buzzOn(self):
     GPIO.output(self.pinB, GPIO.HIGH)
     
-  def buzzerOff(self):
+  def buzzOff(self):
     GPIO.output(self.pinB, GPIO.LOW)
     
   
