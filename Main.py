@@ -83,7 +83,7 @@ device_file = device_folder + '/w1_slave'
 def LED():
   try:
     while True:
-      
+      led.ledOnW()
 
   except KeyboardInterrupt:
     lcd.cleanup()
