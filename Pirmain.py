@@ -53,19 +53,23 @@ device_file = device_folder + '/w1_slave'
 def pirsensor():
     try:
         while True:
-            buzz.setup_buzzer()
-            mot.setup_pir()
-            #if GPIO.input(32) == True:
-            if mot.triggered == True:
+            #buzz.setup_buzzer()
+            #mot.setup_pir()
+            GPIO.setup(32, GPIO.IN)
+            GPIO.setup(5, GPIO.OUT)
+            if GPIO.input(32) == True:
+            #if mot.triggered == True:
                 print ('debug: MOTION DETECTED')
                 lcd.lcd_string("MOTION DETECTED", lcd.LCD_LINE_2)
                 #os.system('python pi_Cam.py')
-                buzz.buzzerOn()
+                #buzz.buzzerOn()
+                GPIO.output(5,1)
                 time.sleep(1)
-                buzz.buzzerOff()
+                #buzz.buzzerOff()
+                GPIO.output(5,0)
                 time.sleep(1)
-            #elif GPIO.input(32) == False:
-            elif mot.triggered == False:
+            elif GPIO.input(32) == False:
+            #elif mot.triggered == False:
                 lcd.lcd_string("", lcd.LCD_LINE_2)
 
 
