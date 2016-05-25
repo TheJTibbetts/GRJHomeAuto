@@ -122,16 +122,16 @@ try:
 
   def buttonPressed():
     howto()
-      count += 1
+    count += 1
     clock()
-      count += 1
+    count += 1
     temp()
-      count += 1
+    count += 1
     pirsensor()
-      count += 1
+    count += 1
     LED()
-      if count == 4:
-        count = 0
+    if count == 4:
+      count = 0
 
 except KeyboardInterrupt:
   lcd.cleanup()
