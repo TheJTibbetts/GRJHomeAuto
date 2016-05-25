@@ -1,9 +1,8 @@
 from BOARD import Board
 
 class MOTION_CL:
-    def __init__(self, Board, pin):
-        self.__board = Board
-        self.__pin = pin
+    def __init__(self, pinP):
+        self.__pinP = 32
         self.__setup_pir()
         self.__triggered = False
 
@@ -18,14 +17,14 @@ class MOTION_CL:
 
     def __setup_pir(self, resistor=False):
         if not resistor:
-            self.__board.GPIO.setup(self.__pin, self.__board.GPIO.IN)
+            GPIO.setup(self.__pinP, GPIO.IN)
         elif resistor:
-            self.__board.GPIO.set(self.__pin, self.__board.GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+            GPIO.set(self.__pinP, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
         else:
             print('Pir error')
         
         # add interrupt
-        self.__board.GPIO.add_event_detect(self.__pin, self.__board.GPIO.FALLING, callback=self.__my_callback, bouncetime=300)
+        GPIO.add_event_detect(self.__pinP, GPIO.FALLING, callback=self.__my_callback, bouncetime=300)
         
     def __my_callback(self, channel):
         self.pressed = True
