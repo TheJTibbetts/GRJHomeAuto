@@ -18,3 +18,5 @@
 <br /> buttons in temp X
 <br /> Add LCD code to each def X
 <br /> Input menu code/debug X
+<br /> <br /> <br />
+<br /> George did most the work, rob did nothing and Jake spent most his time getting angry at rob for doing nothing
