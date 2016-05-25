@@ -89,4 +89,4 @@ def LED():
     lcd.cleanup()
     GPIO.cleanup()
 
-temp()
+LED()
