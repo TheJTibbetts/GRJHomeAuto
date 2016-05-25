@@ -14,7 +14,7 @@ import glob
 GPIO.setmode(GPIO.BCM)
 buzz=BUZZER_CL(6)
 lcd=LCD1602_CL()
-mot=MOTION_CL(32)
+mot=MOTION_CL(22)
 #tcl=TEMP_CL(4)
 
 os.system('modprobe w1-gpio')
