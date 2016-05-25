@@ -15,3 +15,5 @@
 <br /> Temperature ✓
 <br /> Motion Detector ✓
 <br /> Lights X
+<br /> Add LCD code to each def X
+<br /> Input menu code/debug X
