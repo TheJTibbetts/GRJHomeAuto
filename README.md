@@ -9,7 +9,7 @@
 <br /> One potentiometer ✓
 <br /> A temperature sensor ✓
 <br /> And a camera. ✓
-<br /> <br /> # Menu system List
+<br /> <br /> Menu system List
 <br /> Clock ✓
 <br /> Temperature ✓
 <br /> Motion Detector X
