@@ -7,6 +7,7 @@ class BUZZER_CL:
   
   def setup_buzzer(self):
     GPIO.setup(self.pinB, GPIO.OUT)
+    GPIO.setwarnings(False)
   
   def buzzOn(self):
     GPIO.output(self.pinB, GPIO.HIGH)
