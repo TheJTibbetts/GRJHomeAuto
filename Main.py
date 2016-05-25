@@ -117,21 +117,21 @@ try:
 
     time.sleep(3)
 
-a = ['one', 'two', 'three', 'four', 'five']
-count = 0
+  a = ['one', 'two', 'three', 'four', 'five']
+  count = 0
 
-def button.pressed():
-howto()
+  def button.pressed():
+  howto()
     count += 1
-clock()
+  clock()
     count += 1
-temp()
+  temp()
     count += 1
-pirsensor()
+  pirsensor()
     count += 1
-LED()
+  LED()
     if count == 4:
-        count = 0
+      count = 0
 
 except KeyboardInterrupt:
   lcd.cleanup()
