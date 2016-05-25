@@ -3,7 +3,7 @@ import RPi.GPIO as GPIO
 
 class MOTION_CL:
     def __init__(self, pinP):
-        self.pinP = 32
+        self.pinP = 22
         self.setup_pir()
         self.triggered = False
 
