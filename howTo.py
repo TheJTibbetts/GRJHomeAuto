@@ -24,7 +24,7 @@ lcd.lcd_string("Cycle programs",lcd.LCD_LINE_2)
 time.sleep(3)
 
 lcd.lcd_string("Button 4:",lcd.LCD_LINE_1)
-lcd.lcd_string("Ajust LED",lcd.LCD_LINE_2)
+lcd.lcd_string("Adjust LED",lcd.LCD_LINE_2)
 
 time.sleep(3)
 
