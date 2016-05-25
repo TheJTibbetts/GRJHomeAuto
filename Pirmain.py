@@ -55,7 +55,7 @@ def pirsensor():
         while True:
             #buzz.setup_buzzer()
             #mot.setup_pir()
-            GPIO.setup(32, GPIO.IN)
+            GPIO.setup(12, GPIO.IN)
             GPIO.setup(5, GPIO.OUT)
             print('setup')
             if GPIO.input(32) == True:
@@ -69,7 +69,7 @@ def pirsensor():
                 #buzz.buzzOff()
                 GPIO.output(5,0)
                 time.sleep(1)
-            elif GPIO.input(32) == False:
+            elif GPIO.input(12) == False:
             #elif mot.triggered == False:
                 lcd.lcd_string("", lcd.LCD_LINE_2)
 
