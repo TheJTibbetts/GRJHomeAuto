@@ -8,9 +8,9 @@
 <br /> Three buttons ✓
 <br /> One potentiometer ✓
 <br /> A temperature sensor ✓
-<br /> And a camera. ✓
+<br /> And a camera. ✓ - Cancelled
 <br /> <br /> Menu system List
 <br /> Clock ✓
 <br /> Temperature ✓
-<br /> Motion Detector X
+<br /> Motion Detector ✓
 <br /> Lights X
