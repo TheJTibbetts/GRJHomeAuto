@@ -1,5 +1,5 @@
 from LCD import LCD1602_CL
-from time import sleep
+import time
 
 lcd = LCD1602_CL()
 
