@@ -58,8 +58,8 @@ def pirsensor():
             #GPIO.setup(22, GPIO.IN)
             #GPIO.setup(5, GPIO.OUT)
             print('setup')
-            #if GPIO.input(22) == True:
-            if mot.triggered == True:
+            if GPIO.input(22) == True:
+            #if mot.triggered == True:
                 print ('debug: MOTION DETECTED')
                 lcd.lcd_string("MOTION DETECTED", lcd.LCD_LINE_2)
                 #os.system('python pi_Cam.py')
@@ -69,8 +69,8 @@ def pirsensor():
                 buzz.buzzOff()
                 #GPIO.output(5,0)
                 time.sleep(1)
-            #elif GPIO.input(22) == False:
-            elif mot.triggered == False:
+            elif GPIO.input(22) == False:
+            #elif mot.triggered == False:
                 lcd.lcd_string("", lcd.LCD_LINE_2)
 
 
