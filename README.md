@@ -14,6 +14,7 @@
 <br /> Clock ✓
 <br /> Temperature ✓
 <br /> Motion Detector ✓
-<br /> Lights X
+<br /> Lights ✓
+<br /> buttons in temp X
 <br /> Add LCD code to each def X
 <br /> Input menu code/debug X
