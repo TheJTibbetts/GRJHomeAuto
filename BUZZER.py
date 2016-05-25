@@ -1,4 +1,4 @@
-from BOARD import Board
+import RPi.GPIO as GPIO
 
 class BUZZER_CL:
   def __init__(self, pinB):
