@@ -133,6 +133,8 @@ try:
     if count == 4:
       count = 0
 
+buttonPressed()
+
 except KeyboardInterrupt:
   lcd.cleanup()
   GPIO.cleanup()
