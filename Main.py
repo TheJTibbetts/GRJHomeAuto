@@ -35,6 +35,8 @@ try:
       lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
       time.sleep(0.1)
 
+  def UpDownTemp()
+    if 
 
   def temp():
     while True:
@@ -44,7 +46,7 @@ try:
       led.setup_led()
       #GPIO.setup(20, GPIO.OUT)
       #GPIO.setup(16, GPIO.OUT)
-      rtemp = int(tcl.read_temp())
+      rtemp = int(tcl.read_temp() + UpDownTemp())
       read_string = str(rtemp)
       print(tcl.read_temp())
       lcd.lcd_string("-TEMPERATURE-", lcd.LCD_LINE_1)
