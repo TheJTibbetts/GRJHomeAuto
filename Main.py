@@ -36,7 +36,10 @@ try:
       time.sleep(0.1)
 
   def UpDownTemp()
-    if 
+    if GPIO.INPUT(19) == True:
+      UpDownTemp =+ 1
+    if GPIO.input(26) == True:
+      UpDownTemp =- 1
 
   def temp():
     while True:
