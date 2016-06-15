@@ -35,7 +35,7 @@ try:
       lcd.lcd_string(time.strftime("%H" + ":" + "%M" + ":" + "%S"), lcd.LCD_LINE_2)
       time.sleep(0.1)
 
-  def UpDownTemp()
+  def UpDownTemp():
     if GPIO.INPUT(19) == True:
       UpDownTemp =+ 1
     if GPIO.input(26) == True:
