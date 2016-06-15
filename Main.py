@@ -138,7 +138,7 @@ try:
     if count == 4:
       count = 0
 
-buttonPressed()
+buttonPressed(howto, clock, temp, pirsensor,LED)
 
 except KeyboardInterrupt:
   lcd.cleanup()
