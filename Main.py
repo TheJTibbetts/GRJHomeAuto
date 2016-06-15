@@ -123,9 +123,10 @@ try:
     time.sleep(3)
 
   a = ['one', 'two', 'three', 'four', 'five']
-  count = 0
+
 
   def buttonPressed():
+    count = 0
     howto()
     count += 1
     clock()
