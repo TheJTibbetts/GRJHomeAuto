@@ -97,6 +97,7 @@ try:
       time.sleep(3)
       led.ledOnW()
   
+#Follows the on-screen help for our program
   def howto():
     lcd.lcd_string("Please read this",lcd.LCD_LINE_1)
     lcd.lcd_string("for help",lcd.LCD_LINE_2)
