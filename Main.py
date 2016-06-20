@@ -37,9 +37,10 @@ try:
 
   def UpDownTemp():
     if GPIO.INPUT(19) == True:
-      UpDownTemp =+ 1
+      UpDown =+ 1
     if GPIO.input(26) == True:
-      UpDownTemp =- 1
+      UpDown =- 1
+    return UpDown
 
   def temp():
     while True:
