@@ -1,3 +1,5 @@
+#NOT IN USE
+
 from LCD import LCD1602_CL
 import time
 
