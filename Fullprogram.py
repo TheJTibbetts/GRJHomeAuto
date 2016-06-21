@@ -1,4 +1,4 @@
-## NOT IN USE ##
+# NOT IN USE
 
 import RPi.GPIO
 import time
